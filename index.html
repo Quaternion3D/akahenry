@@ -24,7 +24,7 @@
     <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
 
-    <!-- FontAwesome -->
+    <!-- FontAwesome (icons) -->
     <link rel="stylesheet" href="fonts\font-awesome-4.6.3\css\font-awesome.min.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -40,36 +40,47 @@
 
   <body>
 
-    <div class="container">
-    <!-- navbar --> <!-- maybe add some padding -->
-      <h2 class="masthead-brand">akaHenry</h2>
-      <nav>
-        <ul class="nav masthead-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="resume.pdf" target='_blank'>Resume</a></li>
-          <!--<li><a href="projects.html">Projects</a></li>-->
-        </ul>
-      </nav>
-    <!-- welcome message -->
-      <div class="welcome"> <!--vertically centers-->
-        <!-- welcome -->
-        <img src="henryheadshot.jpg" height="200" width="200" class="img-circle">
-        <h1 class="cover-heading">Hi, I'm Henry</h1>
-        <p class="lead">Welcome to my site. I'm glad you're here.</p>
-        <p class="lead">
-          <a class="btn btn-danger" href="https://github.com/Quaternion3D" target='_blank'><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-          <a href="resume.pdf" target='_blank' class="btn btn-lg btn-danger">Resume</a>
-          <a class="btn btn-danger" href="https://www.linkedin.com/in/henryrowswell" target='_blank'><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
-        </p>
-        <p class="lead">Born in Beijing, grew up in Toronto, and now in my fourth year studying electrical engineering and computer science at UC Berkeley. I love going to the gym, snowboarding, and playing piano.</p>
+    <!-- navbar -->
+    <div class="row" style="margin:10px"> <!-- top bar -->
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8"> <!-- middle -->
+        <h2 class="masthead-brand">akaHenry</h2>
+        <nav>
+          <ul class="nav masthead-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.pdf" target='_blank'>Resume</a></li>
+          </ul>
+        </nav>
       </div>
+      <div class="col-sm-2"></div>
+    </div>
 
-    <!--<div class="mastfoot">
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <img src="henryheadshot.jpg" height="200" width="200" class="img-circle">
+            <h1>Hi, I'm Henry</h1>
+            <p style="text-align:center">Welcome to my site, I'm glad you're here</p>
+            <br>
+            <p class="lead" style="text-align:center">
+              <a class="btn btn-danger" href="https://github.com/Quaternion3D" target='_blank'><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+              <a href="resume.pdf" target='_blank' class="btn btn-lg btn-danger">Resume</a>
+              <a class="btn btn-danger" href="https://www.linkedin.com/in/henryrowswell" target='_blank'><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+            </p>
+        </div>
+    </header>
+
+    <!-- HitCounter -->
+    <div align="center"><img src="http://simplehitcounter.com/hit.php?uid=2181180&f=16777215&b=0" border="0" height="18" width="83" style="opacity:0"></div>
+
+    <!-- <div class="mastfoot">
       <div class="inner">
-      </div>
+      </div> -->
     </div> <!-- mastfoot -->
 
-    </div>
+
 
 
     <!-- Bootstrap core JavaScript
