@@ -14,6 +14,9 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Animate.css -->
+    <link href="css/animate.css" rel="stylesheet">
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
@@ -39,24 +42,6 @@
   </head>
 
   <body>
-
-    <!-- navbar -->
-    <div class="row" style="margin:10px"> <!-- top bar -->
-      <div class="col-sm-2"></div>
-      <div class="col-sm-8"> <!-- middle -->
-        <h2 class="masthead-brand">akaHenry</h2>
-        <nav>
-          <ul class="nav masthead-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.pdf" target='_blank'>Resume</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-sm-2"></div>
-    </div>
-
-
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
@@ -72,24 +57,104 @@
         </div>
     </header>
 
+    <div class="container">
+      <div class="row">
+
+        <a data-toggle="modal" data-target="#projectModal" data-project="sudoku"><div class="col-sm-4 project-card">
+            <img src="projects\raspifeeder.png" style="width:100%;"></img>
+            <div>
+              <br>
+              <b><p>Sudoku Solver</b></p>
+              <p>OpenCV to solve any sudoku problem you want.
+              </p>
+            </div>
+        </div></a>
+
+        <a data-toggle="modal" data-target="#projectModal" data-project="raspi"><div class="col-sm-4 project-card">
+          <img src="projects\raspifeeder.png" style="width:100%;"></img>
+          <div>
+            <br>
+            <b><p>Raspberry Pi Pet Feeder</b></p>
+            <p>Designed and built a mobile app controlled automatic pet feeding machine using Python and a Raspberry Pi.
+            </p>
+          </div>
+        </div></a>
+
+    <a data-toggle="modal" data-target="#projectModal" data-project="ballybally"><div class="col-sm-4 project-card">
+      <img src="projects\ballybally350x200.jpg" style="width:100%;"></img>
+      <div>
+        <br>
+        <b><p>BallyBally RollyRolly</b></p>
+        <p>Mind-bending, patience-testing gravity puzzle using Leap Motion and Unity.</p>
+      </div>
+    </div></a>
+
+    <a data-toggle="modal" data-target="#projectModal" data-project="henrythecoder"><div class="col-sm-4 project-card">
+      <img src="projects\henrythecodersnapshot.png" style="width:100%;"></img>
+      <div>
+        <br>
+        <b><p>HenryTheCoder</b></p>
+        <p>YouTube channel where I taught people how to program modifications in Minecraft. 400,000 total views, 4,300 subscribers.</p>
+      </div>
+    </div></a>
+
+    <a data-toggle="modal" data-target="#projectModal" data-project="sudoku"><div class="col-sm-4 project-card">
+      <img src="projects\donkeykong350x200.png" style="width:100%;"></img>
+      <div>
+        <br>
+        <b><p>Classic Video Games</b></p>
+        <p>Recreated games in various languages: Donkey Kong (visual basic), Asteroids (java), Megaman (C#), plus a 2D custom game (Java), 3D custom game (C++,XNA)
+        </p>
+      </div>
+    </div></a>
+
+<!-- row -->
+</div>
+<!-- container -->
+</div>
+
+
     <!-- HitCounter -->
     <div align="center"><img src="http://simplehitcounter.com/hit.php?uid=2181180&f=16777215&b=0" border="0" height="18" width="83" style="opacity:0"></div>
 
     <!-- <div class="mastfoot">
       <div class="inner">
-      </div> -->
-    </div> <!-- mastfoot -->
+      </div>
+    </div> --> <!-- mastfoot -->
 
+    <!-- MODAL -->
+    <!-- ================================================== -->
+    <div class="modal animated fadeIn" id="projectModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="vertical-alignment-helper">
+          <div class="modal-dialog vertical-align-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h3 class="modal-title" id="exampleModalLabel"></h3>
+              </div>
+              <div class="modal-body">
+                  <span class="modal-description"></span>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
 
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    <!-- Bootstrap core JavaScript -->
+    <!-- ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- my js for setting modal content -->
+    <script src="js/akahenry.js"></script>
   </body>
 </html>
